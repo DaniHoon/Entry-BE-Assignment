@@ -24,10 +24,10 @@
 - 주문의 상태 역시 특정 조건(API 호출)에 따라 바뀔 수 있어야 합니다.
 
 ##### 2. 인증 관리 CRUD 수행
-- 유저는 username, password, invalid token을 가지며, password는 암호화하여 저장합니다.
+- 유저는 username, password를 가집니다.
 - 유저가 RESTful API를 통해 서버 B에게 토큰 요청 가능해야 합니다 (ID/PW를 사용한 인증 방식)
 - username과 password에는 정해진 format이 있어야 합니다.
-- refreshToken과 accessToken을 발급하며, refreshToken은 accessToken보다 더 긴 유효기간을 가집니다.
+- refreshToken과 accessToken을 발급합니다.
 
 ##### 3. Pagination을 활용하는 API 구현
 - date, limit, offset, invoice type을 입력할 수 있으며, 다음과 같은 response를 제공해야 합니다:
